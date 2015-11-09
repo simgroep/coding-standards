@@ -1,0 +1,13 @@
+{
+    "name": "mainlycode/coding-standard",
+    "require": {
+        "fabpot/php-cs-fixer": "^1.10"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "othillo",
+            "email": "othillo@othillo.nl"
+        }
+    ]
+}
