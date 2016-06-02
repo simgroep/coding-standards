@@ -14,11 +14,11 @@ $ composer require mainlycode/coding-standards
 Only check for coding standard violations:
 
 ```
-$ ./vendor/bin/php-cs-fixer fix --dry-run --diff
+$ ./vendor/bin/php-cs-fixer fix --dry-run --diff --config-file=vendor/mainlycode/coding-standard/.php_cs
 ```
 
 Fix coding standard violations:
 
 ```
-$ ./vendor/bin/php-cs-fixer fix --diff
+$ ./vendor/bin/php-cs-fixer fix --diff --config-file=vendor/mainlycode/coding-standard/.php_cs
 ```
