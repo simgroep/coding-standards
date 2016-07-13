@@ -1,12 +1,12 @@
-mainlycode/coding-standards
+simgroep/coding-standards
 ===========================
 
-Coding standard configuration for MainlyCode PHP projects using `fabpot/php-cs-fixer`
+Coding standard configuration for SIMGroep PHP projects using `fabpot/php-cs-fixer`
 
 ## Installation
 
 ```
-$ composer require mainlycode/coding-standards
+$ composer require simgroep/coding-standards
 ```
 
 ## Examples

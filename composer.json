@@ -1,6 +1,6 @@
 {
-  "name": "mainlycode/coding-standards",
-  "description": "Coding standard configuration for MainlyCode PHP projects using fabpot/php-cs-fixer",
+  "name": "simgroep/coding-standards",
+  "description": "Coding standard configuration for SIMGroep PHP projects using fabpot/php-cs-fixer",
   "require": {
     "fabpot/php-cs-fixer": "^1.10"
   },
