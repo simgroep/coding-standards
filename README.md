@@ -22,3 +22,20 @@ Fix coding standard violations:
 ```
 $ ./vendor/bin/php-cs-fixer fix --diff --config-file=vendor/simgroep/coding-standard/.php_cs
 ```
+
+## PhpStorm integration
+
+Start by installing this library global:
+
+```
+$ composer global require simgroep/coding-standards
+```
+
+Open PhpStorm and navigate to "settings" -> "tools" -> add one (+).
+Disable "Immediate fily synchronization".
+
+Program: `/Users/<username>/.composer/vendor/bin/php-cs-fixer`
+
+Arguments: `fix $FileDir$/$FileName$ --config-file=/Users/<username>/.composer/vendor/simgroep/coding-standard/.php_cs`
+
+Working dir: `$ProjectFileDir$`
