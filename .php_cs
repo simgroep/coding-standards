@@ -17,6 +17,7 @@ return Symfony\CS\Config\Config::create()
         'standardize_not_equal',          // Replace all <> with !=.
         'unused_use',                     // Unused use statements must be removed.
         'whitespacy_lines',               // Remove trailing whitespace at the end of blank lines.
+        'declare_strict_types',           // Force strict types declaration in all files. Requires PHP >= 7.0.
 
         // contrib
         'align_double_arrow',                         // Align double arrow symbols in consecutive lines.
