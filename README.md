@@ -14,13 +14,13 @@ $ composer require simgroep/coding-standards
 Only check for coding standard violations:
 
 ```
-$ ./vendor/bin/php-cs-fixer fix --dry-run --diff --config-file=vendor/simgroep/coding-standard/.php_cs
+$ ./vendor/bin/php-cs-fixer fix --dry-run --diff --config=vendor/simgroep/coding-standard/.php_cs.dist --stop-on-violation --allow-risky=yes
 ```
 
 Fix coding standard violations:
 
 ```
-$ ./vendor/bin/php-cs-fixer fix --diff --config-file=vendor/simgroep/coding-standard/.php_cs
+$ ./vendor/bin/php-cs-fixer fix --diff --config=vendor/simgroep/coding-standard/.php_cs.dist --stop-on-violation --allow-risky=yes
 ```
 
 ## PhpStorm integration
