@@ -31,11 +31,11 @@ Start by installing this library global:
 $ composer global require simgroep/coding-standards
 ```
 
-Open PhpStorm and navigate to "settings" -> "tools" -> add one (+).
-Disable "Immediate fily synchronization".
+Open PhpStorm and navigate to "Settings" -> "Tools" -> "File Watchers" add one (+).
+Disable "Immediate file synchronization".
 
 Program: `/Users/<username>/.composer/vendor/bin/php-cs-fixer`
 
-Arguments: `fix $FileDir$/$FileName$ --config-file=/Users/<username>/.composer/vendor/simgroep/coding-standard/.php_cs`
+Arguments: `fix $FileDir$/$FileName$ --config=/Users/<username>/.composer/vendor/simgroep/coding-standard/.php_cs.dist`
 
 Working dir: `$ProjectFileDir$`
