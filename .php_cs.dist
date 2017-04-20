@@ -39,5 +39,8 @@ return \PhpCsFixer\Config::create()
     ->setFinder(
         \PhpCsFixer\Finder::create()
             ->in(getcwd())
+            ->exclude('var/cache')
+            ->notPath('var/SymfonyRequirements.php')
+            ->notPath('web/config.php')
     )
 ;
