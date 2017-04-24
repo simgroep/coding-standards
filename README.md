@@ -39,3 +39,10 @@ Program: `/Users/<username>/.composer/vendor/bin/php-cs-fixer`
 Arguments: `fix $FileDir$/$FileName$ --config=/Users/<username>/.composer/vendor/simgroep/coding-standard/.php_cs.dist`
 
 Working dir: `$ProjectFileDir$`
+
+## Requirements
+
+If you run php7 you need to install the php7.0-xml package.
+Else align_double_arrow and align_equals won't work
+
+$ sudo apt-get install php7.0-xml
