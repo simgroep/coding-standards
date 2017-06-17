@@ -1,7 +1,7 @@
 simgroep/coding-standards
-===========================
+=========================
 
-Coding standard configuration for SIMGroep PHP projects using `fabpot/php-cs-fixer`
+Coding standard configuration for SIMGroep PHP projects using `friendsofphp/php-cs-fixer`
 
 ## Installation
 
@@ -9,7 +9,52 @@ Coding standard configuration for SIMGroep PHP projects using `fabpot/php-cs-fix
 $ composer require simgroep/coding-standards
 ```
 
-## Examples
+## Configuration
+
+To customize the default configuration in your project you can add a `.php_cs` to your
+project and include the default configuration like this:
+
+```php
+<?php
+
+$config = require 'vendor/simgroep/coding-standards/.php_cs.dist';
+
+$config->setFinder(
+    \PhpCsFixer\Finder::create()
+        ->in([
+            getcwd() . '/src',
+            getcwd() . '/test',
+        ])
+    )
+;
+
+return $config;
+```
+
+### Symfony example
+
+When applying the coding standards to a standard Symfony project you can customize
+the configuration for a blacklisting approach like this:
+
+```php
+<?php
+
+$config = require 'vendor/simgroep/coding-standards/.php_cs.dist';
+
+$config->setFinder(
+    \PhpCsFixer\Finder::create()
+        ->in(getcwd())
+        ->exclude('app')
+        ->exclude('bin')
+        ->exclude('var/cache')
+        ->exclude('vendor')
+    )
+;
+
+return $config;
+```
+
+## Usage
 
 Only check for coding standard violations:
 
