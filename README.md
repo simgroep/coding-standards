@@ -81,6 +81,6 @@ Disable "Immediate file synchronization".
 
 Program: `/Users/<username>/.composer/vendor/bin/php-cs-fixer`
 
-Arguments: `fix $FileDir$/$FileName$ --config=/Users/<username>/.composer/vendor/simgroep/coding-standard/.php_cs.dist`
+Arguments: `fix $FileDir$/$FileName$ --config=/Users/<username>/.composer/vendor/simgroep/coding-standards/.php_cs.dist`
 
 Working dir: `$ProjectFileDir$`
