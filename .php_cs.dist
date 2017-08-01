@@ -34,6 +34,7 @@ return \PhpCsFixer\Config::create()
         'standardize_not_equals'                => true, // Replace all <> with !=.
         'trailing_comma_in_multiline_array'     => true, // PHP multi-line arrays should have a trailing comma.
         'single_blank_line_before_namespace'    => true, // There should be exactly one blank line before a namespace declaration.
+        'method_separation'                     => true, // There should be one blank line between each method.
 
     ])
     ->setFinder(
